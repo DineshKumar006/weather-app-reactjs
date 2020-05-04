@@ -17,10 +17,10 @@ export const geocode= async (url)=>{
 };
 
 
-export const fetchReport=async (url)=>{
+export const fetchReport= (url)=>{
    
     //  const url='http://api.weatherstack.com/forecast?access_key=a627a3fe73d0f03ab9f3e3ab9fbcfcb7&query='+lat+','+log+'&units=m&country=India'
-   const response= await axios.get(url).then(response=>{
+   const response=  axios.get(url).then(response=>{
        console.log(response)
         const modifiedData={    
                 temperature: response.data.current.temperature,

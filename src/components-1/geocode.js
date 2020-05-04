@@ -7,7 +7,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 // import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './style.css'
 class Geocode extends Component {
@@ -83,13 +82,14 @@ class Geocode extends Component {
 <div className='container'>
 
 
-      <Card className='head' item xs={9} md={3} >
+      <Card className='head'  >
       <CardActionArea className='cardhead'>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2" className='cardarea'>
             Weather Report
           </Typography>
-          <Typography gutterBottom variant="body2"  variant="h7" component="h2">
+
+          <Typography gutterBottom variant="body2"  variant="h6" component="h2">
                 {this.state.date}
           </Typography>
 
@@ -105,10 +105,9 @@ class Geocode extends Component {
                 <ul>
                   <li>
                   <CardContent>
-        <Typography component='h2' variant="h7">
+        <Typography component='h2' variant="h6">
            Location : {this.state.location?this.state.location:'Loading....' },
             
-              Country:{this.state.country?this.state.country:'Loading....'}
           </Typography>
 
         </CardContent>
@@ -116,7 +115,16 @@ class Geocode extends Component {
 
                   <li>
                   <CardContent>
-          <Typography component='h2' variant="h7">
+        <Typography component='h2' variant="h6">
+        Country:{this.state.country?this.state.country:'Loading....'}
+
+          </Typography>
+
+        </CardContent>
+                  </li>
+                  <li>
+                  <CardContent>
+          <Typography component='h2' variant="h6">
               temperature : {this.state.temperature?this.state.temperature+' °C':'Loading....' }
           </Typography>
          
@@ -126,7 +134,7 @@ class Geocode extends Component {
 
                   <li>
                   <CardContent>
-        <Typography component='h2' variant="h7">
+        <Typography component='h2' variant="h6">
               Region : {this.state.region?this.state.region:'Loading....' }
           </Typography>
 
@@ -135,7 +143,7 @@ class Geocode extends Component {
 
                   <li>
                   <CardContent>
-        <Typography component='h2' variant="h7">
+        <Typography component='h2' variant="h6">
               weather_descriptions : {this.state.weather_descriptions?this.state.weather_descriptions:'Loading....' }
           </Typography>
 
@@ -147,7 +155,7 @@ class Geocode extends Component {
 
                   <li>
                   <CardContent>
-        <Typography component='h2' variant="h7">
+        <Typography component='h2' variant="h6">
               Latitude : {this.state.lat?this.state.lat:'Loading....' }
           </Typography>
 
@@ -159,7 +167,7 @@ class Geocode extends Component {
 
                   <li>
                   <CardContent>
-        <Typography component='h2' variant="h7">
+        <Typography component='h2' variant="h6">
               Longitude : {this.state.log?this.state.log:'Loading....' }
           </Typography>
 
