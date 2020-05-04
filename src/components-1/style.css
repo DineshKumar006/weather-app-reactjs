@@ -1,0 +1,22 @@
+.container{
+    width: 40%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-shadow: 1px 2px 7px 1px white;
+  
+   
+}
+
+
+
+.head{
+   
+    height: 600px;
+    opacity: 0.8;
+    
+
+  }
+  .media {
+    height: 140,
+  }
