@@ -48,3 +48,12 @@ export const weatherReport=async(address)=>{
     return data;
 
 }
+
+
+export const fetchCountries=async()=>{
+    const countriesName= await axios.get('https://weather-app-backendv2.herokuapp.com/counties/name').then(res=>{
+        return res
+   });
+
+   return countriesName
+}
