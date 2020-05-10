@@ -2,14 +2,12 @@ const express=require('express');
 const cors=require('cors');
 const geocode=require('./Apis/geocode');
 const weatherFetch=require('./Apis/weatherFetch')
-
 const app=express();
+const PORT=process.env.PORT || 7000;
 
 
 app.use(cors());
 app.use(express.json())
-
-const PORT=process.env.PORT || 7000;
 
 app.get('/weatherReport',(req,res)=>{
     
