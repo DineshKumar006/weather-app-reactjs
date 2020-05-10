@@ -31,20 +31,24 @@ class WeatherReport extends Component {
       address:e.target.elements.location.value
     })
 
-     Api.weatherReport(this.state.address).then(res=>{
-      console.log(res.data.getdata.country)
-      this.setState({
-         lat:res.data.getdata.latitude,
-         log:res.data.getdata.longlitude,
-          temperature:res.data.getdata.temperature,
-          location:res.data.getdata.location,
-          country:res.data.getdata.country,
-          region:res.data.getdata.region,
-          weather_descriptions:res.data.getdata.weather_descriptions,
-          weather_icons:res.data.getdata.weather_icons
-
-      })
-    })
+    setTimeout(() => {
+        Api.weatherReport(this.state.address).then(res=>{
+            // console.log(res)
+            this.setState({
+               lat:res.data.getdata.latitude,
+               log:res.data.getdata.longlitude,
+                temperature:res.data.getdata.temperature,
+                location:res.data.getdata.location,
+                country:res.data.getdata.country,
+                region:res.data.getdata.region,
+                weather_descriptions:res.data.getdata.weather_descriptions,
+                weather_icons:res.data.getdata.weather_icons
+      
+            })
+          })
+        
+    }, 500);
+    
   } 
 
   render(){
