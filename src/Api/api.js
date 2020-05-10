@@ -37,3 +37,13 @@ export const fetchReport= (url)=>{
 }
 
 
+
+export const weatherReport=async(address)=>{
+   const data= await axios.get('http://localhost:7000/weatherReport?address=hyderabad ').then(res=>{
+
+        return res
+    })
+
+    return data;
+
+}

@@ -177,10 +177,17 @@ class Geocode extends Component {
 
                  
                 </ul>
+
+                <CardContent>
+          <Typography>
+          <Form submitHandler={this.submitHandler}/>
+
+          </Typography>
+        </CardContent>
        
       </CardActionArea>
       <CardActions>
-      <Form submitHandler={this.submitHandler}/>
+        
       </CardActions>
     </Card>
       
