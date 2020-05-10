@@ -19,6 +19,9 @@
     .container{
         width: 50%;
     }
+    .btn{
+      
+    }
     
 }
 
@@ -33,7 +36,7 @@
   border: 2px solid black;
   padding: 10px;
   border-radius: 5px;
-  width: 10%;
+  width: 20%;
   background-color: green;
 }
 
