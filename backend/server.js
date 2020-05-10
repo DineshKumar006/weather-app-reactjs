@@ -9,7 +9,7 @@ const app=express();
 app.use(cors());
 app.use(express.json())
 
-const port=process.env.PORT || 7000;
+const PORT=process.env.PORT || 7000;
 
 app.get('/weatherReport',(req,res)=>{
     
@@ -29,6 +29,6 @@ app.get('/weatherReport',(req,res)=>{
 
 
 
-app.listen(port,()=>{
-    console.log('server is ruunign on port',port)
+app.listen(PORT,()=>{
+    console.log('server is ruunign on port',PORT)
 })

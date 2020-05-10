@@ -47,7 +47,7 @@ class WeatherReport extends Component {
             })
           })
         
-    }, 500);
+    }, 100);
     
   } 
 
