@@ -39,7 +39,8 @@ export const fetchReport= (url)=>{
 
 
 export const weatherReport=async(address)=>{
-   const data= await axios.get('http://localhost:7000/weatherReport?address='+address+'').then(res=>{
+//    const data= await axios.get('http://localhost:7000/weatherReport?address='+address+'').then(res=>{
+    const data= await axios.get('/weatherReport?address='+address+'').then(res=>{
 
         return res
     })
